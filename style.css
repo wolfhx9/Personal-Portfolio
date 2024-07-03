@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* start go */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) black ;
+}
+.title {
+    text-align: center;
+    color: var(--main-color);
+    margin: 20px 0;
+}
+.title h3 {
+    font-size: 40px;
+}
+.title p {
+    font-size: 25px;
+    color: white;
+} 
+.tape, .tape1 {
+    margin: 20px 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 19px;
+    font-weight: 900;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--main-color);
+    margin: 50px 0;
+}
+.tape {
+    z-index: 3;
+    transform: skewY(3deg);
+}
+.tape1 {
+    opacity: .2;
+    transform: skewY(-3deg) translateY(-100%);
+    z-index: -2;
+}
+/* end go */
+/* start var  */
+:root {
+    --main-color: #8FFF00 ;
+}
+/* end var  */
+body {
+    background-color: black;
+}
+/* start header */
+header {
+    position: relative;
+    z-index: 3;
+}
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+header .collapse {
+    padding-left: 50px;
+}
+header .collapse li {
+    padding-left: 10px;
+}
+header .collapse li a {
+    font-weight: 500;
+    color: white;
+}
+header .btn-outline-light {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+header .collapse li a:hover {
+    color: var(--main-color);
+    transform: scale(1.1);
+}
+@media (max-width: 767px ) {
+    header .navbar-brand {
+        font-size: 1.9rem;
+        padding: 0 20px;
+    }
+    header .navbar-toggler i {
+        font-size: 2rem;
+        padding: 0 20px;
+        color: white;
+    }
+    header .btn-outline-light {
+        display: none;
+    }
+}
+/* End header */
+/* Start Home */
+.Home {
+    margin-top: -80px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(image/man.png);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.Home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Home .text {
+    width: 50%;
+    z-index: 22;
+}
+.Home .text h1 {
+    color: white;
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+.Home .text p {
+    color: #999;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+.Home::before {
+    content: '';
+    position: absolute;
+    left: 71%;
+    top: 17%;
+    width: 6%;
+    height: 30%;
+    background-color: var(--main-color);
+    transform: translateX(-50%);
+    mix-blend-mode: multiply;
+}
+
+.Home i {
+    color: var(--main-color);
+    font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    animation: down 1s linear infinite;
+}
+@keyframes down {
+    0% {
+        transform: translateY(4px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
+@media (max-width: 767px ) {
+    .Home {
+        height: 131vh;
+        margin-top: -283px;
+        background-image: url(image/man.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+    }
+    .Home .text {
+        width: 100%;
+        z-index: 22;
+        text-align: center;
+    }
+    .Home .text h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .Home .text p {
+        margin-bottom: 57px;
+    }
+    .Home i {
+        display: none;
+    }
+}
+/* End Home */
+/* Start contact */
+.contact .container {
+    margin-top: 30px;
+}
+
+.contact .container .card-group .card {
+    background-color: black;
+    border: 2px solid white;
+    padding: 15px 30px;
+    transition: .5s;
+}
+.contact .container .card-group .card a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: .5s;
+}
+.contact .container .card-group .card a i {
+    padding-right: 20px;
+    font-size: 27px;
+}
+.contact .container .card-group .card:hover {
+    background-color: var(--main-color);
+}
+.contact .container .card-group .card a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+/* End contact */
+/* Staer About  */
+.About {
+    margin-top: 50px;
+}
+.About .container {
+    position: relative;
+}
+.About .container h2 {
+    color: var(--main-color);
+    margin: 20px 0;
+}
+.About .container h3 {
+    color: white;
+    margin: 20px 0;
+}
+.dis {
+    display: flex;
+    justify-content: flex-end;
+}
+.dis p {
+    width: 50%;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+}
+.About .container .card-group {
+    width: 50%;
+    margin-left: auto;
+}
+.About .container .card-group .card {
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.About .container .card-group .card h3 {
+    font-size: 70px;
+    margin: 0;
+}
+.About .container .card-group .card h3::after {
+    content: "\2b";
+    color: var(--main-color);
+}
+.About .container .card-group .card p {
+    font-size: 23px;
+    color: #999;
+}
+.About .container i {
+    font-size: 50px;
+    color: white;
+}
+.About .container::after {
+    content: "\f121";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    top: 0;
+    right: 100px;
+}
+.About .container::before {
+    content: "\f121";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bold; 
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    bottom: 40px;
+    left: 100px;
+}
+/* start Service */
+.Service h2:first-of-type {
+    color: var(--main-color);
+}
+.Service h2:last-of-type {
+    color: white;
+    padding-bottom: 20px;
+}
+.Service .container .row .col .card {
+    background-color: transparent;
+    transition: .5s;
+}
+.Service .container .row .col .card .pack-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #212121;
+    border: 1px solid var(--main-color);
+    padding: 1.6rem;
+    color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -2px rgba(255, 255, 255, 0.1);
+    transition: .5s;
+}
+.Service .container .row .col .card .header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.Service .container .row .col .card .title {
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+}  
+.Service .container .row .col .card .price-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    font-family: sans-serif;
+    font-size: 4.5rem;
+    line-height: 1;
+}
+.Service .container .row .col .card .price-container4 {
+    font-size: 1.7rem;
+}
+.Service .container .row .col .card .price-container span:first-child {
+    margin-top: 10px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}  
+.Service .container .row .col .card .price-container span:last-child {
+    align-self: flex-end;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}  
+.Service .container .row .col .card .lists {
+    display: flex;
+    flex-direction: column;
+}  
+.Service .container .row .col .card .list {
+    display: flex;
+    align-items: center;
+}  
+.Service .container .row .col .card .list p {
+    display: block;
+    position: relative;
+}
+.Service .container .row .col .card .list p::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-size: 20px;
+    color: green;
+    font-weight: 900;
+    top: 0;
+    left: -30px;
+}
+.Service .container .row .col .card .button-container {
+    margin-top: auto;
+    padding: 0;
+}
+.Service .container .row .col .card .button-container button {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.Service .container .row .col .card:hover {
+    transform: translateY(-20px);
+    .header {
+        border-bottom: 1px solid black;
+    }
+    .pack-container {
+        background-color: var(--main-color);
+        border: 1px solid white;
+        color: black;
+    }
+    .title {
+        color: black;
+    }
+    button{
+        color: var(--main-color);
+        background-color: black;
+    }
+}
+/* End Service */
+/* Start Portfolio */
+.Portfolio .container .col .card {
+    background-color: transparent;
+    margin-top: 30px;
+}
+.Portfolio .container .col .card img {
+    transition: .5s;
+}
+.Portfolio .container .col .card img:hover {
+    transform: translatey(-15px) scale(1.1);
+}
+.Portfolio .tape {
+    transform: skew(0);
+}
+/* End Portfolio */
+/* start footer  */
+.footer {
+    margin-top: -30px;
+    width: 99%;
+}
+.footer .row {
+    padding: 0 50px;
+}
+.footer ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.footer .links .list-unstyled li:hover {
+    transform: translateX(10px);
+}
+.footer p {
+    color: white;
+}
+.footer .btn-danger {
+    background-color: black;
+    border-color: var(--main-color);
+    font-size: 19px;
+}
+.footer .btn-danger:active {
+    background-color: var(--main-color);
+    color: black;
+}
+.footer ul li a i {
+    font-size: 30px;
+}
+.footer ul li a i:hover {
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+.footer .copyright {
+    text-align: center;
+}
+/* End footer  */
+
+
+
+
+
+
