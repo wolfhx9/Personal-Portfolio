@@ -133,7 +133,6 @@ header .collapse li a:hover {
     transform: translateX(-50%);
     mix-blend-mode: multiply;
 }
-
 .Home i {
     color: var(--main-color);
     font-size: 30px;
@@ -155,7 +154,6 @@ header .collapse li a:hover {
         transform: translateY(4px);
     }
 }
-
 /* End Home */
 /* Start contact */
 .contact .container {
@@ -559,8 +557,3 @@ header .collapse li a:hover {
         padding: 15px;
     }
 /* Mobile style  */
-
-
-
-
-
