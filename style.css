@@ -47,21 +47,22 @@ html {
 /* end go */
 /* start var  */
 :root {
-    --main-color: #8FFF00 ;
+    --main-color: #6fc004;
 }
 /* end var  */
 body {
-    background-color: black;
+    background-color: #222;
 }
 /* start header */
 header {
     position: relative;
     z-index: 3;
 }
-header .navbar-brand {
-    font-size: 1.5rem;
+header .logo {
+    font-size: 2rem;
     font-weight: bold;
     color: var(--main-color);
+    text-decoration: none;
 }
 header .collapse {
     padding-left: 50px;
