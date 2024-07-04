@@ -161,7 +161,6 @@ header .collapse li a:hover {
 .contact .container {
     margin-top: 30px;
 }
-
 .contact .container .card-group .card {
     background-color: black;
     border: 2px solid white;
@@ -455,9 +454,7 @@ header .collapse li a:hover {
     .Home {
         height: 131vh;
         margin-top: -300px;
-        background-image: url(image/man.png);
         background-size: 120%;
-        background-repeat: no-repeat;
         background-position: bottom;
         position: relative;
     }
@@ -481,52 +478,29 @@ header .collapse li a:hover {
     .About {
         margin: 50px 20px;
     }
-    .About .container {
-        position: relative;
-    }
-    .About .container h2 {
-        color: var(--main-color);
-        margin: 20px 0;
-    }
     .About .container h3 {
-        color: white;
         font-size: 20px;
         margin: 20px 0;
-    }
-    .dis {
-        display: flex;
-        justify-content: flex-end;
     }
     .dis p {
         padding: 10px 15px;
         width: 100%;
-        color: white;
-        font-size: 19px;
         font-weight: 400;
     }
     .About .container .card-group {
         width: 100%;
-        margin-left: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .About .container .card-group .card {
-        background-color: transparent;
-        text-align: center;
         padding: 0 10px;
     }
     .About .container .card-group .card h3 {
         font-size: 50px;
-        margin: 0;
-    }
-    .About .container .card-group .card h3::after {
-        content: "\2b";
-        color: var(--main-color);
     }
     .About .container .card-group .card p {
-        font-size: 15px;
-        color: #999;
+        font-size: 14px;
     }
     .About .container::after {
         content: "\f121";
@@ -547,30 +521,22 @@ header .collapse li a:hover {
         font-size: 40px;
         bottom: -25px;
         left: 0px;
+        z-index: 33;
     }
     .tape, .tape1 {
-        padding: 10px 0;
         padding-left: 5px;
         font-size: 10px;
         font-weight: 600;
-        width: 100%;
-        height: fit-content;
-        background-color: var(--main-color);
         margin: 60px 0 0px;
         overflow: hidden;
     }
     .tape {
-        z-index: 3;
         transform: skewY(5deg);
     }
     .tape1 {
-        opacity: .2;
         transform: skewY(-4deg) translateY(-110px);
-        z-index: -2;
     }
     .Service .container .row .col .card {
-        background-color: transparent;
-        transition: .5s;
         align-items: center;
         width: 100%;
     }
@@ -581,38 +547,17 @@ header .collapse li a:hover {
         transform: translatey(-10px) scale(1);
     }
     .footer {
-        margin-top: -30px;
         width: 97%;
     }
     .footer ul li a {
-        color: var(--main-color);
-        text-decoration: none;
-        font-size: 18px;
         padding-left: 0px;
         text-align: center;
     }
     .footer .btn-danger {
-        background-color: black;
-        border-color: var(--main-color);
         font-size: 19px;
         display: inline;
         padding: 15px;
     }
-    .footer .btn-danger:active {
-        background-color: var(--main-color);
-        color: black;
-    }
-    .footer ul li a i {
-        font-size: 30px;
-    }
-    .footer ul li a i:hover {
-        transform: scale(1.2);
-        color: var(--main-color);
-    }
-    .footer .copyright {
-        text-align: center;
-    }
-}
 /* Mobile style  */
 
 
