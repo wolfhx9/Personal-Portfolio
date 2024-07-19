@@ -51,7 +51,7 @@ html {
 }
 /* end var  */
 body {
-    background-color: #222;
+    background-color: black;
 }
 /* start header */
 header {
@@ -557,4 +557,4 @@ header .collapse li a:hover {
         display: inline;
         padding: 15px;
     }
-/* Mobile style  */
+/* Mobile style */
